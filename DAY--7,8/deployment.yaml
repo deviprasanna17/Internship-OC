@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-flask-server
+  namespace: test-demo
+  labels:
+    app: test-flask
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: test-flask
+  template:
+    metadata:
+      labels:
+        app: test-flask
+    spec:
+      containers:
+      - name: container-1
+        image: prasanna1710/python-flask:demo
+        ports:
+        - containerPort: 5000
