@@ -16,7 +16,7 @@ apiVersion: apps/v1
 	    spec:
 	      containers:
 	      - name: container-1
-	        image: hasmitha25/python-flask:v2
+	        image: prasanna1710/python-flask:v2
 	        ports:
 	        - containerPort: 5000
 	          name: web
