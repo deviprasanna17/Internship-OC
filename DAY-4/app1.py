@@ -15,8 +15,7 @@ app = Flask(__name__)
 def hello_world():
     #return '<h1>Hello World! First flask uri'
     #return 'Hello World! First flask uri'
-    return {"app1": "success"}
- 
+    return "hello world"
 # main driver function
 if __name__ == '__main__':
  
